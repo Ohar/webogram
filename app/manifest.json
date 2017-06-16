@@ -31,5 +31,13 @@
     "90": "img/icons/icon90.png",
     "96": "img/icons/icon96.png",
     "128": "img/icons/icon128.png"
+  },
+
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+T"
+      }
+    }
   }
 }
