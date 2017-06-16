@@ -1,29 +1,35 @@
 {
-  "name": "Telegram",
-  "description": "Telegram Web App.\nMore info & source code here: https://github.com/zhukov/webogram",
+  "name": "Telegram as a Sidebar",
+  "description": "Telegram Web App as a sidebar.\nBased on original work from: https://github.com/zhukov/webogram",
   "version": "0.5.6",
-  "short_name": "Telegram",
+  "short_name": "Telegram Sidebar",
   "manifest_version": 2,
-  "app": {
-    "background": {
-      "scripts": ["js/background.js"]
+  "applications": {
+    "gecko": {
+      "strict_min_version": "54.0a1"
     }
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "48": "img/icons/icon48.png",
+      "96": "img/icons/icon96.png"
+    },
+    "default_title" : "Telegram",
+    "default_panel": "index.html"
   },
   "permissions": [
     "notifications",
-    "webview",
-    {"fileSystem": ["write"]},
     "storage",
-    "unlimitedStorage",
-    "fullscreen"
+    "tabs"
   ],
-  "gcm_sender_id": "122867383838",
   "icons": {
     "16": "img/icons/icon16.png",
     "32": "img/icons/icon32.png",
+    "48": "img/icons/icon48.png",
     "60": "img/icons/icon60.png",
     "64": "img/icons/icon64.png",
     "90": "img/icons/icon90.png",
+    "96": "img/icons/icon96.png",
     "128": "img/icons/icon128.png"
   }
 }
